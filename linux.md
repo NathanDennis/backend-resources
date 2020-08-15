@@ -41,8 +41,9 @@ Commands related to the reading of file contents, output redirection and manipul
 
 Example:
 
-- `head video_games.tsv` - Outputs the first 10 lines of the file named `video_games.tsv`
-- `head -3 package.json` - Outputs the first 3 lines of the `package.json` file
+`head video_games.tsv` - Outputs the first 10 lines of the file named `video_games.tsv`
+
+`head -3 package.json` - Outputs the first 3 lines of the `package.json` file
 
 #### tail
 - Similar to `head` but outputs the *last* 10 lines of a file by default
@@ -50,8 +51,9 @@ Example:
 
 Example:
 
-- `tail package.json` - Outputs the last 10 lines of `package.json`
-- `tail -15 package.json` - Outputs the last 15 lines of `package.json`
+`tail package.json` - Outputs the last 10 lines of `package.json`
+
+`tail -15 package.json` - Outputs the last 15 lines of `package.json`
 
 
 #### mv
@@ -60,3 +62,31 @@ Example:
 Example:
 
 `mv components pages` - In the current directory, rename the folder called `components` to `pages`
+
+#### curl
+- Fetch the source contents of a URL and output them to the console
+- Can use output redirection to store contents in a file
+
+Example:
+
+`curl https://www.google.com` - Fetches the page source of google.com and outputs the result
+
+`curl https://www.google.com > google.txt` - Fetches the page source and writes the result to a file called `google.txt`. If the specified file doesn't exist, it is created and then written to
+
+#### file
+- Describe a file's type and other details
+
+Example:
+
+`file google.txt` - Describes a file called google.txt with the output of:
+
+- `google.txt: HTML document, ISO-8859 text, with very long lines`
+
+#### grep
+- Search a file for a pattern of text and return matching results
+- Follows the syntax of `grep OPTIONS PATTERN FILE`
+
+Example:
+
+`grep "google" google.txt` - Searches the google.txt file for case sensitive matches of "google" and outputs the results
+`grep -i "google" google.txt` - Searches for case *insensitive* matches of "google", including "Google", and outputs the results
