@@ -11,6 +11,6 @@ A collection of resources specific to back end tools, technologies, code example
 
 ### Contribute
 
-Once I've decided on a structure for the project, feel free to raise an issue on the repo with any suggestions, pull requests to add code etc
+Feel free to raise an issue on the repo with any suggestions, pull requests to add code etc
 
 Catch me on Discord - NegatronBear#9815 and also in the [Eddie Jaoude Community Server](https://discord.com/invite/jZQs6Wu)
