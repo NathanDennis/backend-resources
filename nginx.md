@@ -2,5 +2,6 @@
 
 ## Articles / written tutorials
 
-- [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html) - by NGINX
+- [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html) - by NGINX.org
+- [Controlling NGINX](http://nginx.org/en/docs/control.html) - by NGINX.org
 - [Setting up NGINX on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md) - by raspberrypi.org
