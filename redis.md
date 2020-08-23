@@ -52,7 +52,7 @@
 ___
 
 ### Hashes
-Stores field values on a key similar to JavaSript Objects
+Stores field values on a key similar to JavaScript Objects
 
 #### HMSET - `HMSET eky field value`
 
