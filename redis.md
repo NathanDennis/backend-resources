@@ -78,6 +78,6 @@ ___
 
  - Example: `RPUSH myList 20` - Pushes the value "20" to the right / end of the list, after the value of "10"
  
-#### LRANGE - `listName startIndex stopIndex` - Fetches values from a list in a specified range
+#### LRANGE - `LRANGE listName startIndex stopIndex` - Fetches values from a list in a specified range
 
  - Example: `LRANGE myList 0 1` - Returns "10" "20" from the previous examples
