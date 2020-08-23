@@ -54,7 +54,7 @@ ___
 ### Hashes
 Stores field values on a key similar to JavaScript Objects
 
-#### HMSET - `HMSET eky field value`
+#### HMSET - `HMSET key field value`
 
  - Example: `HMSET user id 45 name "Nathan"` - Creates a hash called `user` with fields named `id` and `name` with their specified values
  
@@ -68,3 +68,16 @@ Stores field values on a key similar to JavaScript Objects
  
 ___
 
+### Lists
+
+#### LPUSH - `LPUSH listName value` - Pushes a new value to the left of the head of the list
+
+ - Example: `LPUSH myList 10` - Pushes the value "10" into the left / start of the list
+ 
+#### RPUSH - `RPUSH listName value` - Pushes a new value to the right of the tail of the list
+
+ - Example: `RPUSH myList 20` - Pushes the value "20" to the right / end of the list, after the value of "10"
+ 
+#### LRANGE - `listName startIndex stopIndex` - Fetches values from a list in a specified range
+
+ - Example: `LRANGE myList 0 1` - Returns "10" "20" from the previous examples
