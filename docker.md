@@ -14,13 +14,21 @@
 
 #### `docker ps` - Show all currently running containers
 
-#### `docker run [image name]` - Run an image
+#### `docker create [image name]` - Prep a container with the specified image without starting it
+
+#### `docker start [image / container]` - Start a created, or previously stopped container
+
+#### `docker run [image name]` - Combines create & start to prep a new container and run an image
   - If the image is not present, it will be pulled / downloaded on the first run
   
 #### `docker run -d [image]` - Run a container in the background (detached)
 
 #### `docker stop [container name]` - Stop a container
   - Can use the container ID or the container name as the parameter to stop
+  - Stop command allows the container to shut down on its' own time after cleanup
+
+#### `docker kill [container name]` - Immediately stop a container
+  - docker stop falls back to docker kill if the container doesn't shut down within 10 seconds
 
 #### `docker rm [container name]` - Remove a stopped / exited container
   - Can use the ID or name in the command
@@ -35,3 +43,9 @@
 #### `docker attach [container]` - Attach a container to run in the foreground
 
 #### `docker exec` - Run a command on a docker container
+
+#### `docker system prune` - Remove all stopped containers
+  - This will also remove all build cache, and all networks not used by at least one container
+
+#### `docker logs [container id]` - Get logs of any events emitted from a container
+
