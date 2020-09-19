@@ -26,6 +26,11 @@
 #### `docker stop [container name]` - Stop a container
   - Can use the container ID or the container name as the parameter to stop
   - Stop command allows the container to shut down on its' own time after cleanup
+  
+#### `docker stop $(docker ps -aq)` - Stop all containers
+  - `$(docker ps -aq)` is shell command substitution
+    `-a` all containers
+    `-q` all running docker containers IDs
 
 #### `docker kill [container name]` - Immediately stop a container
   - docker stop falls back to docker kill if the container doesn't shut down within 10 seconds
